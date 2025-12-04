@@ -75,7 +75,7 @@ const SmartCityDashboard = () => {
         `https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${city.lat}&longitude=${city.lon}&current=pm10,pm2_5,carbon_monoxide,nitrogen_dioxide,ozone,dust&hourly=pm2_5&timezone=Asia/Kolkata`
       );
       const aqiJson = await aqiResponse.json();
-      
+      // Store responses in state
       setWeatherData(weatherJson);
       setAirQuality(aqiJson);
       setLastUpdated(new Date());
