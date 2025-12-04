@@ -105,6 +105,8 @@ const SmartCityDashboard = () => {
     return <Zap style={{ width: '48px', height: '48px', color: '#eab308' }} />;
   };
 
+  
+// Air quality API (PM2.5, PM10, gases, dust)
   const getAQILevel = (pm25) => {
     if (pm25 <= 12) return { level: 'Good', color: '#22c55e', textColor: '#16a34a' };
     if (pm25 <= 35.4) return { level: 'Moderate', color: '#eab308', textColor: '#ca8a04' };
