@@ -57,6 +57,8 @@ const SmartCityDashboard = () => {
     { name: 'Lucknow', lat: 26.8467, lon: 80.9462 }
   ];
 
+/* function to fetch city data from open-meteo api */
+/* used for time interval of 5 minutes */
   const fetchCityData = async (cityName) => {
     setLoading(true);
     setError(null);
