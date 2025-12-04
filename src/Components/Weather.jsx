@@ -182,7 +182,7 @@ const SmartCityDashboard = () => {
 
     return { score, recommendation };
   };
-
+ // Split into two windows: 09–12 and 14–18
   const getHourlyComfortSeries = () => {
     if (!weatherData?.hourly) return [];
 
